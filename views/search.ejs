@@ -1,0 +1,14 @@
+<%- include("header.ejs") %>
+<div>
+<img id="pokemon-image" src=<%= image %>  alt="pokemon image" >
+</div>
+<div class="pokemon-description">
+    <ul>
+        <li class="upperCase">Name: <%= data.name%></li>
+        <li>Species: <%= data.genera[7].genus %></li>
+        <li>Description: <%= data.flavor_text_entries[0].flavor_text %><%= data.flavor_text_entries[2].flavor_text %><%= data.flavor_text_entries[3].flavor_text %><%= data.flavor_text_entries[4].flavor_text %><%= data.flavor_text_entries[5].flavor_text %><%= data.flavor_text_entries[6].flavor_text %></li>
+    </ul>
+</div>
+
+
+<%- include("footer.ejs") %>
