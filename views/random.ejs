@@ -1,0 +1,12 @@
+<%- include("header.ejs") %>
+<h1>Welcome to the Pokedex!</h1>
+
+<div>
+    <img src=<%= image %>  alt="pokemon image" >
+</div>
+<div id="randomPage">
+    <ul>
+        <li class="randomText" class="upperCase">You are a <%= data.name %>!</li>
+    </ul>
+</div>
+<%- include("footer.ejs") %>

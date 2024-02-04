@@ -1,0 +1,22 @@
+<%- include("header.ejs") %>
+<h1>Welcome to the Pokedex!</h1>
+<p><%= data %></p>
+</div>
+<div class="form" id="searchForm">
+<form id="myForm" method="post">
+  <label for="submit">Please enter a pokemon to identify</label>
+  <br>
+  <input type="text" id="searchBox" name="pokemonName">
+  <input id="searchButton" type="submit" value="Search" formaction="/search">
+</form>
+</div>
+
+<div id="random" class="form">
+<form id="myForm" method="post">
+  <label for="submit">What type of Pokemon are you?</label>
+  <br>
+  <input id="randomButton" type="submit" value="Let's find out!" formaction="/random">
+</form>
+</div>
+
+<%- include("footer.ejs") %>
